@@ -35,11 +35,13 @@
 
 ## 文件路径
 
-..  
+video_copy_detection/  
 ├── code  
-│   ├── baseline  
 │   ├── CBVR  
-│   └── ccf_video_copy_detection.ipynb  
+│   ├── feature_extract.ipynb  
+│   ├── key_frame_extract.ipynb  
+│   ├── README.md  
+│   └── video_retrieval.ipynb  
 ├── download  
 │   ├── submit_example.csv  
 │   ├── test_query.tar.gz  
@@ -48,12 +50,16 @@
 │   └── train_refer.tar.gz  
 ├── test  
 │   ├── query  
+│   ├── query_frame  
 │   └── submit_example.csv  
-└── train  
-    ├── query  
-    ├── query_frame  
-    ├── refer  
-    ├── refer_frame  
-    └── train.csv  
+├── train  
+│   ├── query  
+│   ├── query_frame  
+│   ├── refer  
+│   ├── refer_frame  
+│   └── train.csv  
+└── var  
+    ├── refer_features.txt  
+    └── test_query_features.txt  
 
 其中`query`和`refer`为训练数据文件夹，而`query_frame`和`refer_frame`分别为提取的关键帧的存放文件夹。
